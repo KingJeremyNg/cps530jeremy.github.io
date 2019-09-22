@@ -6,6 +6,7 @@
         <meta http-equiv="Content-type"/>
         <meta content="text/html"/>
         <link rel="stylesheet" href="index.css">
+        <script src="functions.js"></script>
         <style>
             *{
                 margin: auto;
@@ -16,20 +17,23 @@
     </head>
 
     <body class="container" style="text-align: center">
-        <form action="/main.html" method="POST" autocomplete="off">
+        <form name="login" action="./main.html" onsubmit="return validateForm()" method="POST" autocomplete="off">
             <div class="imgcontainer">
                 <img src="imgs/NgKFCpic.png" class="avatar">
             </div>
-            <h1>Welcome to Jeremy Ng's Website.</h1>
+            <h1 class="offset">Welcome to Jeremy Ng's Website.</h1>
             <div class="container;flexVertical">
-                <label for="uname"><b>Username</b></label>
-                <input type="text" placeholder="Enter Username" name="uname" required>
-            <div class="container;flexVertical">
-                <label for="psw"><b>Password</b></label>
-                <input type="password" placeholder="Enter Password" name="psw" required>
-            </div>
-            <div class="container;flexVertical">
-                <button type="submit">Login</button>
+                <div>
+                    <label for="uname"><b>Username</b></label>
+                    <input type="text" placeholder="Enter Username" name="uname" required>
+                </div>
+                <div>
+                    <label for="psw"><b>Password</b></label>
+                    <input type="password" placeholder="Enter Password" name="psw" required>
+                </div>
+                <div>
+                    <button type="submit">Login</button>
+                </div>
             </div>
         </form>
     </body>
