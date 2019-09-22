@@ -170,4 +170,4 @@ Write a technical report in HTML that contains all the following elements:
 --Works as expected for desktop browsers. However in mobile view, there is white space and text shadows do not work.
 
 -How long did you spend on this lab (approximately)
---8 Hours
+--9 Hours
