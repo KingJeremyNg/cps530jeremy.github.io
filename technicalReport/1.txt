@@ -1,0 +1,173 @@
+Technical Report Lab 1
+
+Jeremy Ng
+500882192
+
+Write a technical report in HTML that contains all the following elements:
+
+-The actual printout of the HTML code.
+*****************************************
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-type"/>
+        <meta content="text/html"/>
+        <link rel="stylesheet" href="index.css">
+        <script src="functions.js"></script>
+        <style>
+            *{
+                margin: auto;
+                text-align: center;
+            }
+            .container {
+                z-index: 2;
+                top: 0;
+                margin: 0;
+                display: flex;
+                flex-wrap: wrap;
+                position:relative;
+                justify-content: space-between;
+                size: 100px;
+            }
+            img.avatar {
+                width: 20%;
+                border-radius: 50%;
+            }
+            .flexVertical {
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+            }
+            html, body {
+                overflow: hidden;
+                height: 100%;
+                width: 100%;
+            }
+        </style>
+        <title>Jeremy Ng's Website</title>
+    </head>
+
+    <body class="container;flexVertical" style="text-align: center">
+        <div class="imgcontainer">
+            <img src="imgs/NgKFCpic.png" alt="avatar" class="avatar">
+        </div>
+        <h1 style="padding-top: 20px">Welcome to Jeremy Ng's Website.</h1>
+        <div class="container;flexVertical" style="padding-top: 20px">
+            <label>Username: </label>
+            <input id="username" autocomplete="off">
+            <label>Password: </label>
+            <input id="password" autocomplete="off">
+            <button onClick="checkAuth()">Submit</button>
+        </div>
+    </body>
+</html>
+*****************************************
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-type"/>
+        <meta content="text/html"/>
+        <link rel="stylesheet" href="index.css">
+        <script src="functions.js"></script>
+        <title>Jeremy Ng's Website</title>
+        <style>
+            .container {
+                z-index: 2;
+                top: 0;
+                margin: 0;
+                display: flex;
+                flex-wrap: wrap;
+                position:relative;
+                justify-content: space-between;
+                size: 100px;
+            }
+            .intro {
+                color: black;
+                padding-left: 25px;
+                text-align: left;
+                font-size: 150%;
+                text-shadow: 2px 2px 4px white;
+            }
+            .flexVertical {
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+            }
+            html, body {
+                overflow: hidden;
+                height: 100%;
+                width: 100%;
+            }
+            video {
+                top: 50%;
+                left: 50%;
+                -webkit-transform: translateX(-50%) translateY(-50%);
+                transform: translateX(-50%) translateY(-50%);
+                min-height: 100%;
+                min-width: 100%;
+                height: auto;
+                width: auto;
+                z-index: -100;
+                position: absolute;
+                opacity: 1;
+            }
+            .bgFill {
+                left: 0;
+                top: 0;
+                width: 400px;
+                height: 250px;
+                border-style: solid;
+                border-color: black;
+                background-color: white;
+                background-image: url("./imgs/kanna.png");
+                background-repeat: no-repeat;
+                background-image: linear-gradient(to right);
+                opacity: 0.9;
+            }
+            li {
+                color: black;
+            }
+            a{
+                color: darkblue;
+                font-size: 150%;
+                text-shadow: 2px 2px 4px white;
+            }
+        </style>
+    </head>
+
+    <body style="background-color: black">
+        <video autoplay muted loop>
+            <source src="./video/fate1.mp4" type="video/mp4">
+        </video>
+        <div class="bgFill">
+            <div class="intro">
+                <h1>Jeremy Ng</h1>
+                <h3>500882192</3>
+            </div>
+            <div class="container;flexVertical">
+                <b>
+                    <ul>
+                        <li><a href="./technicalReport/1.txt">Technical Report</a></li>
+                        <li><a href="./">Validation Report</a></li>
+                    </ul>
+                <b>
+            </div>
+        </div>
+    </body>
+</html>
+*****************************************
+
+
+-How did you password protect your page (what method)?
+--Using javascript on a separate file with method document.querySelector. My login page is index.html which redirects to main.html.
+
+-What new tag did you try? What was its effect?
+--New to HTML/web dev. I have use the Video tag.
+
+-Does your page look different in different browsers and platforms(IE/Edge/Firefox/Chrome/Safari - desktop/tablet/phone)? If yes, what are the main differences?
+--Works as expected for desktop browsers. However in mobile view, there is white space and text shadows do not work.
+
+-How long did you spend on this lab (approximately)
+--8 Hours

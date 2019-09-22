@@ -12,7 +12,9 @@
 .intro {
     color: black;
     padding-left: 25px;
-    font-size: 200%;
+    text-align: left;
+    font-size: 150%;
+    text-shadow: 2px 2px 4px white;
 }
 
 img.avatar {
@@ -49,13 +51,15 @@ video {
 .bgFill {
     left: 0;
     top: 0;
-    width: 500px;
-    height: 200px;
+    width: 400px;
+    height: 250px;
     border-style: solid;
     border-color: black;
-    background-color: black;
+    background-color: white;
     background-image: url("./imgs/kanna.png");
     background-repeat: no-repeat;
+    background-image: linear-gradient(to right);
+    opacity: 0.9;
 }
 
 li {
@@ -65,4 +69,5 @@ li {
 a{
     color: darkblue;
     font-size: 150%;
+    text-shadow: 2px 2px 4px white;
 }
