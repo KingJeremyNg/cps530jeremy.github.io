@@ -11,8 +11,8 @@ Write a technical report in HTML that contains all the following elements:
 
 <html lang="en">
     <head>
-        <meta http-equiv="Content-type"/>
-        <meta content="text/html"/>
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
+        <meta name="description" content="CPS530 Website">
         <link rel="stylesheet" href="index.css">
         <script src="functions.js"></script>
         <style>
@@ -67,8 +67,8 @@ Write a technical report in HTML that contains all the following elements:
 
 <html lang="en">
     <head>
-        <meta http-equiv="Content-type"/>
-        <meta content="text/html"/>
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
+        <meta name="description" content="CPS530 Website">
         <link rel="stylesheet" href="index.css">
         <script src="functions.js"></script>
         <title>Jeremy Ng's Website</title>
@@ -167,7 +167,7 @@ Write a technical report in HTML that contains all the following elements:
 --New to HTML/web dev. I have use the Video tag.
 
 -Does your page look different in different browsers and platforms(IE/Edge/Firefox/Chrome/Safari - desktop/tablet/phone)? If yes, what are the main differences?
---Works as expected for desktop browsers. However in mobile view, there is white space and text shadows do not work.
+--Works as expected for desktop browsers. However in mobile view, there is white space below the video and text shadows do not work.
 
 -How long did you spend on this lab (approximately)
 --9 Hours
