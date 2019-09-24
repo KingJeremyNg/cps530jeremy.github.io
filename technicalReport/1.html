@@ -1,12 +1,34 @@
-Technical Report Lab 1
+<!DOCTYPE html>
 
-Jeremy Ng
-500882192
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
+        <meta name="description" content="CPS530 Website">
+        <link rel="stylesheet" href="index.css">
+        <script src="functions.js"></script>
+        <title>Jeremy Ng's Website</title>
+    </head>
 
-Write a technical report in HTML that contains all the following elements:
-
--The actual printout of the HTML code.
-*****************************************
+    <body>
+        <h1>
+            Jeremy Ng Lab 1 Technical Report
+        </h1>
+        <p>
+            <br>-How did you password protect your page (what method)?
+            <br>--Using javascript on a separate file with method document.querySelector. My login page is index.html which redirects to main.html.
+            <br>
+            <br>-What new tag did you try? What was its effect?
+            <br>--New to HTML/web dev. I have use the Video tag.
+            <br>
+            <br>-Does your page look different in different browsers and platforms(IE/Edge/Firefox/Chrome/Safari - desktop/tablet/phone)? If yes, what are the main differences?
+            <br>--Works as expected for desktop browsers. However in mobile view, there is white space below the video and text shadows do not work.
+            <br>
+            <br>-How long did you spend on this lab (approximately)
+            <br>--9 Hours
+            <br>
+            <br>-The actual printout of the HTML code:
+        </p>
+        <textarea readonly rows="100" cols="120">
 <!DOCTYPE html>
 
 <html lang="en">
@@ -16,35 +38,35 @@ Write a technical report in HTML that contains all the following elements:
         <link rel="stylesheet" href="index.css">
         <script src="functions.js"></script>
         <style>
-            *{
-                margin: auto;
-                text-align: center;
-            }
-            .container {
-                z-index: 2;
-                top: 0;
-                margin: 0;
-                display: flex;
-                flex-wrap: wrap;
-                position:relative;
-                justify-content: space-between;
-                size: 100px;
-            }
-            img.avatar {
-                width: 20%;
-                border-radius: 50%;
-            }
-            .flexVertical {
-                display: flex;
-                flex-direction: column;
-                flex-wrap: wrap;
-            }
-            html, body {
-                overflow: hidden;
-                height: 100%;
-                width: 100%;
-            }
-        </style>
+                *{
+                    margin: auto;
+                    text-align: center;
+                }
+                .container {
+                    z-index: 2;
+                    top: 0;
+                    margin: 0;
+                    display: flex;
+                    flex-wrap: wrap;
+                    position:relative;
+                    justify-content: space-between;
+                    size: 100px;
+                }
+                img.avatar {
+                    width: 20%;
+                    border-radius: 50%;
+                }
+                .flexVertical {
+                    display: flex;
+                    flex-direction: column;
+                    flex-wrap: wrap;
+                }
+                html, body {
+                    overflow: hidden;
+                    height: 100%;
+                    width: 100%;
+                }
+            </style>
         <title>Jeremy Ng's Website</title>
     </head>
 
@@ -62,7 +84,8 @@ Write a technical report in HTML that contains all the following elements:
         </div>
     </body>
 </html>
-*****************************************
+        </textarea>
+        <textarea readonly rows="100" cols="120">
 <!DOCTYPE html>
 
 <html lang="en">
@@ -149,25 +172,14 @@ Write a technical report in HTML that contains all the following elements:
             <div class="container;flexVertical">
                 <b>
                     <ul>
-                        <li><a href="./technicalReport/1.txt">Technical Report</a></li>
-                        <li><a href="./">Validation Report</a></li>
+                        <li><a href="./technicalReport/1.html" target="_blank">Technical Report</a></li>
+                        <li><a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fkingjeremyng.github.io%2F" target="_blank">Validation Report</a></li>
                     </ul>
                 <b>
             </div>
         </div>
     </body>
 </html>
-*****************************************
-
-
--How did you password protect your page (what method)?
---Using javascript on a separate file with method document.querySelector. My login page is index.html which redirects to main.html.
-
--What new tag did you try? What was its effect?
---New to HTML/web dev. I have use the Video tag.
-
--Does your page look different in different browsers and platforms(IE/Edge/Firefox/Chrome/Safari - desktop/tablet/phone)? If yes, what are the main differences?
---Works as expected for desktop browsers. However in mobile view, there is white space below the video and text shadows do not work.
-
--How long did you spend on this lab (approximately)
---9 Hours
+        </textarea>
+    </body>
+</html>
