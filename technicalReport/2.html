@@ -15,22 +15,270 @@
             <br>Write a technical report in HTML that contains all the following elements :
             <br>
             <br>What is your element CSS class?
-            <br>img.avatar
+            <li>img.avatar</li>
             <br>
             <br>What is your global CSS class?
-            <br>.bgFill
+            <li>.bgFill</li>
             <br>
             <br>What are your HTML5-only tags?
-            <br>progress and mark element.
+            <li>progress and mark element.</li>
             <br>
             <br>What are your CSS3-only features?
-            <br>text-shadow and border-radius.
+            <li>text-shadow and border-radius.</li>
             <br>
             <br>Did you use the same protection method? If no, what did you use this time?
-            <br>Yes.
+            <li>Yes.</li>
             <br>
             <br>How long did you spend on this lab (approximately)
-            <br>3 hours.
+            <li>3 hours.</li>
+            <br>
+            <br>The actual printout of my code:
         </p>
+        <textarea readonly rows="120" cols="60">
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
+        <meta name="description" content="CPS530 Website">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="index.css">
+        <script src="functions.js"></script>
+        <title>Jeremy Ng's Website</title>
+    </head>
+
+    <body class="container flexVertical" style="text-align: center">
+        <div class="imgcontainer">
+            <img src="imgs/NgKFCpic.png" alt="avatar" class="avatar">
+        </div>
+        <h1 style="padding-top: 20px">Welcome to Jeremy Ng's Website.</h1>
+        <div class="container flexVertical form" style="padding-top: 20px">
+            <label>Username: </label>
+            <input id="username" autocomplete="off">
+            <label>Password: </label>
+            <input id="password" autocomplete="off">
+            <button onClick="checkAuth()">Submit</button>
+        </div>
+    </body>
+</html>
+        </textarea>
+        <textarea readonly rows="120" cols="60">
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
+        <meta name="description" content="CPS530 Website">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="index.css">
+        <script src="functions.js"></script>
+        <title>Jeremy Ng's Website</title>
+    </head>
+
+    <body style="background-color: black">
+        <video autoplay muted loop>
+            <source src="./video/puck.mp4" type="video/mp4">
+        </video>
+        <div class="bgFill2">
+            <div class="intro">
+                <h1>Jeremy Ng</h1>
+                <h3>500882192</h3>
+            </div>
+        </div>
+        <div class="bgFill3">
+            <div class="spacing">
+                <p><b>This is my progress for <mark>CPS530</mark></b></p>
+                <table class="progress">
+                    <tr>
+                        <th rowspan="1">Lab #</th>
+                        <th rowspan="1">Report</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td><a href="./technicalReport/1.html" target="_blank">Yes</a></td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td><a href="./technicalReport/2.html" target="_blank">Yes</a></td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>No</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>No</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>No</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>No</td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>No</td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>No</td>
+                    </tr>
+                </table>
+                <progress value="2" max="8"></progress>
+                <br><a style="margin-left: 18px" href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fkingjeremyng.github.io%2F" target="_blank">Validation Report - index</a>
+                <br><a style="margin-left: 18px" href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fkingjeremyng.github.io%2Fmain.html" target="_blank">Validation Report - main</a>
+            </div>
+        </div>
+    </body>
+</html>
+        </textarea>
+        <textarea readonly rows="120" cols="60">
+* {
+    font-family: sans-serif;
+}
+
+.container {
+    z-index: 2;
+    top: 0;
+    margin: 0;
+    position:relative;
+    size: 100px;
+}
+
+.form {
+    align-items: flex-start !important;
+}
+
+.intro {
+    color: black;
+    margin-top: -15px;
+    padding-left: 25px;
+    text-align: left;
+    font-size: 200%;
+    text-shadow: 2px 2px 4px white;
+}
+
+a {
+    color: darkblue;
+}
+
+img.avatar {
+    width: 40%;
+    border-radius: 50%;
+}
+
+.flexVertical {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+html, body {
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+}
+
+video {
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    min-height: 100%;
+    min-width: 100%;
+    height: auto;
+    width: auto;
+    z-index: -100;
+    position: fixed;
+    opacity: 1;
+    object-fit: fill;
+}
+
+.bgFill {
+    width: 400px;
+    height: 250px;
+    border-radius: 25px;
+    border-style: solid;
+    border-color: black;
+    background-color: white;
+    background-image: url("./imgs/kanna.png");
+    background-repeat: no-repeat;
+    opacity: 0.95;
+}
+
+.bgFill2 {
+    width: 400px;
+    height: 250px;
+    border-radius: 25px;
+    border-style: solid;
+    border-color: black;
+    background-size: 120%;
+    background-color: white;
+    background-image: url("./imgs/megumin.jpeg");
+    background-repeat: no-repeat;
+    opacity: 0.95;
+}
+
+.bgFill3 {
+    margin-top: 15px;
+    margin-left: 70px;
+    width: 250px;
+    border-radius: 25px;
+    border-style: solid;
+    border-color: black;
+    background-size: 150%;
+    background-color: white;
+    background-image: url("./imgs/");
+    background-repeat: no-repeat;
+    opacity: 0.8;
+}
+
+table, tr {
+    border: 1px solid black;
+    border-radius: 25px;
+}
+
+table.progress {
+    text-align: center;
+    width: 200px;
+    height: 250px;
+}
+
+progress[value] {
+    width: 175px;
+    height: 15px;
+    margin-left: 15px;
+    margin-top: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: white;
+}
+
+.spacing {
+    margin: 22px;
+}
+
+.center {
+    text-align: center;
+}
+        </textarea>
+        <textarea readonly rows="120" cols="60">
+function checkAuth() {
+    let usernameInput = document.querySelector('#username');
+    let passwordInput = document.querySelector('#password');
+    if(usernameInput.value == "jeremyng" && passwordInput.value == "jeremyng") {
+        alert("Successfully Logged in: Redirecting");
+        window.location.assign("main.html");
+    } else {
+        alert("Wrong Username or Password!");
+        usernameInput.value = "";
+        passwordInput.value = "";
+    }
+}
+        </textarea>
     </body>
 </html>
