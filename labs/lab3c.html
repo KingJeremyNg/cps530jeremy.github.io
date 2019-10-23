@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <title>CPS530 Lab 3</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+
+<body class="w3-light-grey w3-content" style="max-width:1600px">
+
+    <!-- !PAGE CONTENT! -->
+    <div class="w3-main">
+
+        <!-- Photo grid -->
+        <div class="w3-row">
+            <div class="w3-third">
+                <img src="../imgs/kanna.png" style="width: 500px; height: auto;" onclick="onClick(this)"
+                    alt="Sleepy dragon">
+            </div>
+
+            <div class="w3-third">
+                <img src="../imgs/megumin.jpeg" style="width: 500px; height: auto;" onclick="onClick(this)"
+                    alt="Explosive girl">
+            </div>
+
+            <div class="w3-third">
+                <img src="../imgs/NgKFCpic.png" style="width: 300px; height: auto;" onclick="onClick(this)"
+                    alt="Jeremy Fried Chicken (JFC)">
+            </div>
+        </div>
+
+        <!-- Modal for full size images on click-->
+        <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+            <span class="w3-button w3-black w3-xlarge w3-display-topright">×</span>
+            <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+                <img id="img01" class="w3-image">
+                <p id="caption"></p>
+            </div>
+        </div>
+
+        <div>
+            <h1>Click the images!</h1>
+        </div>
+        <!-- End page content -->
+    </div>
+
+    <script>
+        // Modal Image Gallery
+        function onClick(element) {
+            document.getElementById("img01").src = element.src;
+            document.getElementById("modal01").style.display = "block";
+            var captionText = document.getElementById("caption");
+            captionText.innerHTML = element.alt;
+        }
+    </script>
+
+</body>
+
+</html>
