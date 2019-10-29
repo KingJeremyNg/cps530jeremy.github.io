@@ -4,11 +4,189 @@
     <head>
         <meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
         <meta name="description" content="CPS530 Website">
-        <link rel="stylesheet" href="index.css">
-        <script src="functions.js"></script>
         <title>Jeremy Ng's Website</title>
     </head>
     <body>
+        <textarea readonly cols="120" rows="75">
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>CPS530 Lab4b</title>
+    <style>
+        * {
+            text-align: center;
+        }
+
+        html,
+        body {
+            overflow: hidden;
+            height: 100%;
+            width: 100%;
+            font-size: 1em;
+            color: #000000;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        img {
+            top: 50%;
+            left: 50%;
+            -webkit-transform: translateX(-50%) translateY(-50%);
+            transform: translateX(-50%) translateY(-50%);
+            min-height: 100%;
+            min-width: 100%;
+            height: auto;
+            width: auto;
+            z-index: -100;
+            position: fixed;
+            opacity: 0.80;
+            object-fit: fill;
+            background-color: black;
+        }
+
         
+    </style>
+</head>
+
+<body>
+    <img src="https://wallpapercave.com/wp/wp1838978.jpg">
+    <div style="background-color: white; border-radius: 5vh; width: 25vw; height: 300px; padding-top: 20px; top: 20px; left: 20px; position: fixed;">
+        <form action="./cgi-bin/lab4b.cgi">
+            Given Name:<br>
+            <input type="text" name="firstname">
+            <br>
+            Family Name:<br>
+            <input type="text" name="lastname">
+            <br><br>
+            Gender:<br>
+            <input type="radio" name="gender" value="male">Male
+            <br>
+            <input type="radio" name="gender" value="female">Female
+            <br><br>
+            Servant Type:<br>
+            <select name="servant">
+                <option value="archer">Archer</option>
+                <option value="assassin">Assassin</option>
+                <option value="berserker">Berserker</option>
+                <option value="caster">Caster</option>
+                <option value="lancer">Lancer</option>
+                <option value="rider">Rider</option>
+                <option value="saber">Saber</option>
+            </select>
+            <br><br>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+
+</html>
+        </textarea>
+
+        <textarea readonly cols="100" rows="20">
+#!/usr/bin/perl
+
+use CGI':standard';
+use strict;
+use CGI::Carp qw(fatalsToBrowser);
+
+print "Content-type: text/html\n\n";
+
+print "<p style='text-align: center'>This is my first Perl program</p>";
+        </textarea>
+
+        <textarea readonly cols="100" rows="100">
+#!/usr/bin/perl
+
+use CGI':standard';
+use strict;
+use CGI::Carp qw(fatalsToBrowser);
+
+print "Content-type: text/html\n\n";
+
+print "<p style='text-align: center'>This is my first Perl program</p>";
+j78ng@elara:~/public_html/cgi-bin$ cat lab4b.cgi
+#!/usr/bin/perl
+
+use CGI':standard';
+use strict;
+use CGI::Carp qw(fatalsToBrowser);
+
+my $firstname = param("firstname");
+my $lastname = param("lastname");
+my $gender = param("gender");
+my $servant = param("servant");
+
+print qq(Content-type: text/html\n\n);
+
+print qq(<!DOCTYPE html>);
+print qq(<html>);
+print qq(<head>);
+print qq(<title>CPS530 Lab4b</title>);
+print qq(<style>);
+print qq(* {);
+print qq(text-align: center;);
+print qq(});
+print qq(html, body {);
+print qq(overflow: hidden;);
+print qq(height: 100%;);
+print qq(width: 100%;);
+print qq(});
+print qq(</style>);
+print qq(</head>);
+print qq(<body>);
+if ($servant eq "archer") {
+        print qq(<img src="https://vignette.wikia.nocookie.net/typemoon/images/b/b6/Archercard.jpg">);
+
+        print qq(<h1>Victory is yours</h1>);
+        print qq(<h1>$firstname of $lastname magecraft</h1>);
+        print qq(<h1>You have summoned one of the three noble knight classes</h1>);
+}
+if ($servant eq "assassin") {
+
+        print qq(<img src="https://vignette.wikia.nocookie.net/typemoon/images/c/c7/Assassincard.jpg">);
+
+        print qq(<h1>Victory is yours</h1>);
+        print qq(<h1>$firstname of $lastname magecraft</h1>);
+        print qq(<h1>You have summoned one of the four cavalry calsses</h1>);
+}
+if ($servant eq "berserker") {
+        print qq(<img src="https://vignette.wikia.nocookie.net/typemoon/images/7/77/Berserkercard.jpg">);
+        print qq(<h1>Victory is yours</h1>);
+        print qq(<h1>$firstname of $lastname magecraft</h1>);
+        print qq(<h1>You have summoned one of the four cavalry calsses</h1>);
+}
+if ($servant eq "caster") {
+
+        print qq(<img src="https://vignette.wikia.nocookie.net/typemoon/images/3/39/Castercard.jpg">);
+
+        print qq(<h1>Victory is yours</h1>);
+        print qq(<h1>$firstname of $lastname magecraft</h1>);
+        print qq(<h1>You have summoned one of the four cavalry calsses</h1>);
+}
+if ($servant eq "lancer") {
+        print qq(<img src="https://vignette.wikia.nocookie.net/typemoon/images/b/ba/Lancercard.jpg">);
+        print qq(<h1>Victory is yours</h1>);
+        print qq(<h1>$firstname of $lastname magecraft</h1>);
+        print qq(<h1>You have summoned one of the three noble knight classes</h1>);
+}
+if ($servant eq "rider") {
+
+
+        print qq(<img src="https://vignette.wikia.nocookie.net/typemoon/images/f/fd/Ridercard.jpg">);
+        print qq(<h1>Victory is yours</h1>);
+        print qq(<h1>$firstname of $lastname magecraft</h1>);
+        print qq(<h1>You have summoned one of the four cavalry calsses</h1>);
+}
+if ($servant eq "saber") {
+
+        print qq(<img src="https://vignette.wikia.nocookie.net/typemoon/images/0/01/Sabercard.jpg">);
+        print qq(<h1>Victory is yours</h1>);
+        print qq(<h1>$firstname of $lastname magecraft</h1>);
+        print qq(<h1>You have summoned one of the three noble knight classes</h1>);
+}
+print qq(</body>);
+print qq(</html>);
+        </textarea>
     </body>
 </html>
