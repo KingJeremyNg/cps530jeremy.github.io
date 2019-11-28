@@ -1,0 +1,22 @@
+* {
+    text-align: center;
+}
+
+html, body {
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    font-size: 1em;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: blanchedalmond;
+}
+
+.container {
+    width: 100vw;
+    height: auto;
+}
+
+img {
+    border-radius: 15px;
+}

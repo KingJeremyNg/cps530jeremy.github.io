@@ -1,0 +1,47 @@
+<response type="result">
+  <data>
+    <item>
+      <title>Yimago 2 / Hawaiian Music Radio</title>
+      <song>Israel Kamakawiwo'ole - The Fly [1996]</song>
+      <track>
+        <artist>Israel Kamakawiwo'ole</artist>
+        <title>The Fly [1996]</title>
+        <album>In Dis Life</album>
+        <royaltytrackid>0</royaltytrackid>
+        <started>1574971873</started>
+        <id>46430</id>
+        <length>0</length>
+        <playlist>
+          <id>1579</id>
+          <title>Y2 &gt; General</title>
+        </playlist>
+        <buyurl></buyurl>
+        <imageurl>https://cps-static.rovicorp.com/3/JPG_500/MI0002/501/MI0002501048.jpg</imageurl>
+      </track>
+      <bitrate>64 Kbps</bitrate>
+      <server>Online</server>
+      <autodj>Online</autodj>
+      <source>Yes</source>
+      <offline></offline>
+      <summary>&lt;a href=&quot;http://199.195.194.92:2199/tunein/-stream/meyima03.pls&quot;&gt;Yimago 2 / Hawaiian Music Radio - Israel Kamakawiwo'ole - The Fly [1996]&lt;/a&gt;</summary>
+      <listeners>4</listeners>
+      <maxlisteners>100</maxlisteners>
+      <reseller>0</reseller>
+      <serverstate>1</serverstate>
+      <sourcestate>1</sourcestate>
+      <sourceconn>1</sourceconn>
+      <date>Nov 28, 2019</date>
+      <time>10:12 AM</time>
+      <rawmeta>Israel Kamakawiwo'ole - The Fly [1996]</rawmeta>
+      <mountpoint>/stream</mountpoint>
+      <tuneinurl>http://199.195.194.94:8183/stream</tuneinurl>
+      <directtuneinurl></directtuneinurl>
+      <proxytuneinurl></proxytuneinurl>
+      <tuneinformat>aac</tuneinformat>
+      <webplayer>muses</webplayer>
+      <servertype>ShoutCast2</servertype>
+      <listenertotal>4</listenertotal>
+      <url>http://199.195.194.92:2199/rpc</url>
+    </item>
+  </data>
+</response>
